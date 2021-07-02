@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/haiya-ui/haiya-ui/issues"
   },
-  "homepage": "https://github.com/haiya-ui/haiya-ui#readme"
+  "homepage": "https://github.com/haiya-ui/haiya-ui#readme",
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
 }
