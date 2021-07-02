@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/haiya-ui/haiya-ui#readme",
   "dependencies": {
+    "lerna": "^4.0.0",
     "typescript": "^4.3.5"
   }
 }
