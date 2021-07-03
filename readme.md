@@ -1,12 +1,8 @@
 _Project is still under development_
 
 <p align="center">
-  <img width="200" src="https://raw.githubusercontent.com/haiya-ui/haiya-ui/master/assets/logo.png" alt="Haiya logo">
+  <img width="233" src="https://raw.githubusercontent.com/haiya-ui/haiya-ui/master/assets/logo.png" alt="Haiya logo">
 </p>
-
-# Haiya
-
-> 嗨呀
 
 Haiya is a react UI framework to fast build your own business.
 
