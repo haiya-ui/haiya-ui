@@ -1,5 +1,9 @@
 _Project is still under development_
 
+<p align="center">
+  <img width="200" src="https://raw.githubusercontent.com/haiya-ui/haiya-ui/master/assets/logo.png" alt="Haiya logo">
+</p>
+
 # Haiya
 
 > 嗨呀
