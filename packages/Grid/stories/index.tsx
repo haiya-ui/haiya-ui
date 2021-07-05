@@ -5,23 +5,23 @@ export const GridExample0: React.FC = () => {
   return (
     <Grid
       gap={2}
-      cols={2}
+      columns={2}
       row={3}
       md={{ column: 3, row: 2 }}
       xs={{ column: 1, row: 6 }}>
       <GridItem colStart={1} colEnd={2}>
-        index
+        div
       </GridItem>
-      <GridItem>index</GridItem>
+      <GridItem>div</GridItem>
       <GridItem
         rowStart={1}
         rowSpan={3}
         md={{
           rowSpan: 2,
         }}>
-        index
+        div
       </GridItem>
-      <GridItem>index</GridItem>
+      <GridItem>div</GridItem>
     </Grid>
   )
 }
@@ -30,18 +30,18 @@ export const GridExample1: React.FC = () => {
   return (
     <Grid gap={2} size="2-3" md={{ size: '3-2' }} xs={{ size: '1-6' }}>
       <GridItem col="1-2" md={{ col: '0-1' }}>
-        index
+        div
       </GridItem>
-      <GridItem>index</GridItem>
+      <GridItem>div</GridItem>
       <GridItem
         rowStart={1}
         rowSpan={3}
         md={{
           rowSpan: 2,
         }}>
-        index
+        div
       </GridItem>
-      <GridItem>index</GridItem>
+      <GridItem>div</GridItem>
     </Grid>
   )
 }
@@ -54,7 +54,7 @@ export const GridExample2: React.FC = () => {
         ['side', 'content'],
         ['footer', 'footer'],
       ]}
-      cols={[200, '1fr']}
+      columns={[200, '1fr']}
       rows={[100, 'auto', 100]}>
       <GridItem area="header">Header</GridItem>
 
