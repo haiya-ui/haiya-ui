@@ -24,6 +24,9 @@ Thank you all for your contribution to open source.
 - [react-spectrum](https://react-spectrum.adobe.com/)
 - [prisma/lens](https://github.com/prisma/lens)
 - [stitches](https://stitches.dev)
+- [ant design](https://ant.design/)
+- [bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [tailwind](https://tailwindcss.com/)
 
 ## Author
 
