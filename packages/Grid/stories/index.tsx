@@ -7,8 +7,8 @@ export const GridExample0: React.FC = () => {
       gap={2}
       columns={2}
       row={3}
-      md={{ column: 3, row: 2 }}
-      xs={{ column: 1, row: 6 }}>
+      ll={{ column: 3, row: 2 }}
+      lll={{ column: 1, row: 6 }}>
       <GridItem colStart={1} colEnd={2}>
         div
       </GridItem>

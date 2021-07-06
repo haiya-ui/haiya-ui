@@ -1,6 +1,7 @@
 import React from 'react'
 
-type Props = unknown
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Props = any
 
 const Flex: React.FC<Props> = () => {
   return <div>Flex</div>
