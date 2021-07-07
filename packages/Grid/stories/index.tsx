@@ -7,8 +7,8 @@ export const GridExample0: React.FC = () => {
       gap={2}
       columns={2}
       row={3}
-      ll={{ column: 3, row: 2 }}
-      lll={{ column: 1, row: 6 }}>
+      md={{ column: 3, row: 2 }}
+      xl={{ column: 1, row: 6 }}>
       <GridItem colStart={1} colEnd={2}>
         div
       </GridItem>
@@ -50,9 +50,10 @@ export const GridExample2: React.FC = () => {
   return (
     <Grid
       areas={[
-        ['header', 'header'],
-        ['side', 'content'],
-        ['footer', 'footer'],
+        // 200       1fr
+        ['header', 'header'], // 100
+        ['side', 'content'], // auto
+        ['footer', 'footer'], // 100
       ]}
       columns={[200, '1fr']}
       rows={[100, 'auto', 100]}>

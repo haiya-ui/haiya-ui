@@ -4,12 +4,12 @@ import Flex from '../src/Flex'
 export const index: React.FC = () => {
   return (
     <Flex
-      S={{
+      md={{
         direction: 'column',
-        justifyContent: 'center',
-        itemsContent: 'center',
+        justify: 'center',
+        items: 'center',
       }}
-      M={{ direction: 'row' }}>
+      xl={{ direction: 'row' }}>
       index
     </Flex>
   )
