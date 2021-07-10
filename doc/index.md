@@ -157,14 +157,14 @@ export const ButtonExample0: React.FC = () => {
 
 ```jsx
 import React from 'react'
-import Button from '../src/components/input/Button'
-import useButton from '../src/components/input/Button'
-import useTextInput from '../src/components/input/TextInput'
-import TextInput from '../src/components/input/TextInput'
-import Container from '../src/components/layout/Container'
-import { Grid } from '../src/components/layout/Grid/src'
+import { Button, useButton } from '@haiya-ui/input/Button'
+import { TextInput, useTextInput } from '@haiya-ui/input/TextInput'
+import Container from '@haiya-ui/layout/Container'
+import { Grid } from '@haiya-ui/layout/Grid/src'
+import { useTheme } from '@haiya-ui/theme'
 
 const Demo0: React.FC = () => {
+  const theme = useTheme()
   const loginButton = useButton()
   const usernameTextInput = useTextInput()
   const passwordTextInput = useTextInput()
@@ -177,7 +177,7 @@ const Demo0: React.FC = () => {
   }
 
   return (
-    <Container>
+    <Container bg={theme.color.gray100}>
       <Grid columns={{ sm: 1, md: 2, xl: 3 }} gap={3}>
         <TextInput name="username" {...usernameTextInput} />
 
