@@ -165,6 +165,7 @@ import { useTheme } from '@haiya-ui/theme'
 
 const Demo0: React.FC = () => {
   const theme = useTheme()
+  const { gray100, gray200 } = theme.colors
   const loginButton = useButton()
   const usernameTextInput = useTextInput()
   const passwordTextInput = useTextInput()
@@ -177,7 +178,7 @@ const Demo0: React.FC = () => {
   }
 
   return (
-    <Container bg={theme.color.gray100}>
+    <Container bg={{ sm: gray100, md: gray200 }}>
       <Grid columns={{ sm: 1, md: 2, xl: 3 }} gap={3}>
         <TextInput name="username" {...usernameTextInput} />
 
