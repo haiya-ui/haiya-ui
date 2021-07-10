@@ -1,7 +1,7 @@
 import React from 'react'
 import Flex from '../src/Flex'
 
-export const index: React.FC = () => {
+export const FlexExample0: React.FC = () => {
   return (
     <Flex
       md={{
