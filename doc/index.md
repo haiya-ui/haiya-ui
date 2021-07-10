@@ -33,8 +33,8 @@ export default const Example0 = () => {
     <Div
       p={2}
       m={2}
-      sm={ p: 4 m: 6 }
-      md={ p: 8 m: 10 }>
+      sm={{ p: 4 m: 6 }}
+      md={{ p: 8 m: 10 }}>
       Content
     </Div>
   )
@@ -44,7 +44,7 @@ export default const Example0 = () => {
 ```jsx
 export default const Example1 = () => {
   return (
-    <Div m={ sm: 1, md: 2, xl: 3 }>
+    <Div m={{ sm: 1, md: 2, xl: 3 }}>
       Content
     </Div>
   )
@@ -97,9 +97,9 @@ Traditionally, we use `<Col>` and `<Row>` to build our layout.
 export const ColRowExample0 = () => {
   return (
     <Row columns={12} gap={2} align="center">
-      <Col sm={12} md={6} xl={3}></Col>
-      <Col sm={12} md={6} xl={3}></Col>
-      <Col sm={12} md={6} xl={3}></Col>
+      <Col sm={12} md={6} xl={4}></Col>
+      <Col sm={12} md={6} xl={4}></Col>
+      <Col sm={12} md={12} xl={4}></Col>
     <Row>
   )
 }
