@@ -1,20 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState } from 'react'
 
-type returnType = {
+type ReturnType = {
   value: string
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-type Props = {
-  [key: string]: unknown
-}
-
-export default function useTextInput(props?: Props): returnType {
+export default function useInput(): ReturnType {
   const [value, setValue] = useState<string>('')
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value)
   }
 
-  return { value, onChange, ...props }
+  return { value, onChange }
 }

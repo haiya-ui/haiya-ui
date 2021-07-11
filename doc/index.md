@@ -3,7 +3,7 @@
 Haiya is a react UI framework to fast build your own business.
 
 - easy to create your own theme.
-- component hooks.
+- every component has own hook to extend or override.
 - typescript support.
 - responsive design friendly.
 - easy extend component.
@@ -197,4 +197,15 @@ const Demo0: React.FC = () => {
 }
 
 export default Demo0
+```
+
+```jsx
+export const NewTextInput = extendComponentsStyle(TextInput, theme => ({
+  root: {
+    background: theme.colors.gray200,
+  },
+  input: {
+    borderRadius: theme.borderRadius,
+  }
+})
 ```
