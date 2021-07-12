@@ -209,3 +209,44 @@ export const NewTextInput = extendComponentsStyle(TextInput, theme => ({
   }
 })
 ```
+
+```jsx
+export const Example1 = (props) => {
+  const { focusProps, isFocused } = useFocus()
+  const { inputValueStateProps, value } = useInputValueState()
+  const { hoverProps, isHovered } = useHover()
+
+  return (
+    <input
+      {...props}
+      {...hoverProps}
+      {...focusProps}
+      {...inputValueStateProps}
+    />
+  )
+}
+```
+
+```jsx
+export const Sample = (props) => {
+  const ref = useRef()
+  const element = createElement('input', { ref })
+  const isHovered = useHoverEvent(ref)
+  const isFocus = useFocusEvent(ref)
+  const value = useInputValue(ref)
+
+  return element
+}
+
+function useHoverEvent(ref) {
+  useEffect(() => {
+    const onHover = function () {
+      // bussines logic
+    }
+    ref.addEventListener('hover', onHover)
+    return () => {
+      ref.removeEventListener('hover', onHover)
+    }
+  }, [ref])
+}
+```

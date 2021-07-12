@@ -1,3 +1,6 @@
+const OFF = 0
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const WARN = 1
 const ERROR = 2
 
 module.exports = {
@@ -24,5 +27,7 @@ module.exports = {
     'linebreak-style': [ERROR, 'unix'],
     quotes: [ERROR, 'single'],
     semi: [ERROR, 'never'],
+    '@typescript-eslint/explicit-module-boundary-types': OFF,
+    '@typescript-eslint/no-unused-vars': ERROR,
   },
 }

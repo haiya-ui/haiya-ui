@@ -18,3 +18,13 @@ export default function useTextInput(props?: Props): returnType {
 
   return { value, onChange, ...props }
 }
+
+export function useInputValueState() {
+  const [value, setValue] = useState<string>('')
+
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(event.target.value)
+  }
+
+  return { value, setValue, onChange }
+}

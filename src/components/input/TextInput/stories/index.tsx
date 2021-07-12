@@ -1,6 +1,6 @@
 import React, { ChangeEventHandler, HTMLAttributes } from 'react'
 import useInput from '../src/hooks/useInput'
-import useTextInput from '../src/hooks/useTextInput'
+import useTextInput, { useInputValueState } from '../src/hooks/useTextInput'
 import TextInput from '../src/TextInput'
 
 export const TextInputExample0: React.FC = () => {
@@ -13,6 +13,12 @@ export const TextInputExample1: React.FC = () => {
   const input = useInput()
 
   return <input {...input} />
+}
+
+export const TextInputExample2: React.FC = () => {
+  const inputValueState = useInputValueState()
+
+  return <input {...inputValueState} />
 }
 
 export interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
