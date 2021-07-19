@@ -27,6 +27,7 @@ Thank you all for your contribution to open source.
 - [ant design](https://ant.design/)
 - [bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [tailwind](https://tailwindcss.com/)
+- [bulma](https://bulma.io/)
 
 ## Author
 
